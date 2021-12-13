@@ -3,4 +3,5 @@
   width: 100vw;
   background: #5e1921;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }

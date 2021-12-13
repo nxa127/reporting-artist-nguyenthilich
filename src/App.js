@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import YouTube from "react-youtube";
 
@@ -13,6 +13,14 @@ const opts = {
 };
 
 const App = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      document
+        .getElementById("page_starting")
+        .scrollIntoView({ behavior: "smooth" });
+    }, 500);
+  }, []);
+
   return (
     <Layout>
       <div className="banner_container">
@@ -23,7 +31,9 @@ const App = () => {
         />
 
         <div className="banner_title">
-          <p>Nữ “trùm” - từ cái duyên nợ đến giữ lại gốc Xoan cổ</p>
+          <p id="page_starting">
+            Nữ “trùm” - từ cái duyên nợ đến giữ lại gốc Xoan cổ
+          </p>
         </div>
       </div>
 
