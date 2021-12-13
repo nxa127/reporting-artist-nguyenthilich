@@ -40,7 +40,6 @@ const App = () => {
       <div className="body_wrapper">
         <div className="body_container">
           <p className="body_quote">
-            &nbsp;&nbsp;&nbsp;&nbsp;<b>Sapo:</b>{" "}
             <i>
               Tiết trời rét hanh hao của mùa đông, cùng với không gian ảm đạm do
               dịch bệnh như đã trùm lên vùng trung du Phú Thọ một bức màn xám
