@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import YouTube from "react-youtube";
 
@@ -13,14 +13,6 @@ const opts = {
 };
 
 const App = () => {
-  useEffect(() => {
-    setTimeout(() => {
-      document
-        .getElementById("page_starting")
-        .scrollIntoView({ behavior: "smooth" });
-    }, 500);
-  }, []);
-
   return (
     <Layout>
       <div className="banner_container">
@@ -29,12 +21,6 @@ const App = () => {
           src={require("./assets/images/banner.jpg").default}
           alt=""
         />
-
-        <div className="banner_title">
-          <p id="page_starting">
-            Nữ “trùm” - từ cái duyên nợ đến giữ lại gốc Xoan cổ
-          </p>
-        </div>
       </div>
 
       <div className="body_wrapper">
@@ -52,10 +38,6 @@ const App = () => {
             </i>
           </p>
 
-          <div className="body_video-container">
-            <YouTube videoId="FJrX6_25JA8" opts={opts} />
-          </div>
-
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="body_uppercase-character">M</span>ột đời tâm huyết
@@ -70,9 +52,8 @@ const App = () => {
           </p>
           <div className="body_text-and-image-left-container">
             <img src={require("./assets/images/1.jpg").default} alt="" />
-            <div style={{ flex: 1, marginLeft: 16 }}>
+            <div className="body_text-and-image-left-content-container">
               <div className="body_text-and-image-content">
-                &nbsp;&nbsp;&nbsp;&nbsp;{" "}
                 <span className="body_uppercase-character">T</span>rên con đường
                 quanh co về thành phố Việt Trì “đi tìm nhà bà Lịch”, chúng tôi
                 chỉ cần nhắc tên bà trùm hát Xoan thì hầu như ai cũng biết.
@@ -131,6 +112,9 @@ const App = () => {
             sân đình, ra tận bến đò Ðức Bác. “Cá bé anh phó cho đào/ Cá lớn anh
             bắt để chào đại vương...”.
           </p>
+          <div className="body_video-container">
+            <YouTube videoId="FJrX6_25JA8" opts={opts} />
+          </div>
           <p className="body_content-title">Lệ làng, ý vua</p>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -146,7 +130,7 @@ const App = () => {
             gốc của Phú Thọ.
           </p>
           <div className="body_text-and-image-right-container">
-            <div style={{ flex: 1, marginRight: 16 }}>
+            <div className="body_text-and-image-right-content-container">
               <div className="body_text-and-image-content">
                 Trên con đường quanh co về thành phố Việt Trì “đi tìm nhà bà
                 Lịch”, chúng tôi chỉ cần nhắc tên bà trùm hát Xoan thì hầu như
@@ -289,9 +273,11 @@ const App = () => {
             truyền dạy thế hệ trẻ đến hơi thở cuối cùng.
           </p>
 
-          <div className="body_footer-container">
-            <p>
-              <i>
+          <div
+            style={{ width: "100%", display: "flex", justifyContent: "center" }}
+          >
+            <div className="body_footer-container">
+              <p>
                 Ghi nhận sự đóng góp của nghệ nhân Nguyễn Thị Lịch, năm 2005, bà
                 được Hội Văn nghệ dân gian Việt Nam phong tặng danh hiệu Nghệ
                 nhân dân gian; năm 2011, bà được Viện Âm nhạc tặng Giấy khen vì
@@ -301,8 +287,8 @@ const App = () => {
                 phong tặng danh hiệu Nghệ nhân ưu tú. Nghệ nhân Nguyễn Thị Lịch
                 là một trong những cá nhân tiêu biểu được nhận Giải thưởng Phụ
                 nữ Việt Nam năm 2021.
-              </i>
-            </p>
+              </p>
+            </div>
           </div>
         </div>
       </div>

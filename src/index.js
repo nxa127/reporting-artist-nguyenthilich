@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
-import "./assets/font/cherish.ttf";
-import "./assets/font/roboto-slab.ttf";
+import "./assets/font/roboto.ttf";
+import "./assets/font/pacifico.ttf";
 
 ReactDOM.render(
   <React.StrictMode>

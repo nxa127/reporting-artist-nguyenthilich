@@ -1,18 +1,18 @@
 @font-face {
-  font-family: "cherish";
-  src: local("cherish"), url(./assets/font/cherish.ttf) format("truetype");
+  font-family: "pacifico";
+  src: local("pacifico"), url(./assets/font/pacifico.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: "roboto-slab";
-  src: local("roboto-slab"),
-    url(./assets/font/roboto-slab.ttf) format("truetype");
+  font-family: "roboto";
+  src: local("roboto"),
+    url(./assets/font/roboto.ttf) format("truetype");
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: roboto-slab;
+  font-family: roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0e1111;
