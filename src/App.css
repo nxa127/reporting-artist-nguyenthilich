@@ -39,8 +39,16 @@
 
 p {
   color: #001a33;
-  font-size: 1.2vw;
-  font-weight: 500;
+  font-size: 1.05vw;
+  line-height: 1.5vw;
+  padding: 0 32px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    margin: 8px 0;
+  }
 }
 
 .banner_container {
@@ -81,8 +89,7 @@ p {
 
 .body_container {
   width: 50vw;
-  padding: 16px;
-  padding-bottom: 0;
+  padding: 0 16px;
 }
 
 @media screen and (max-width: 768px) {
@@ -121,8 +128,8 @@ p {
 
 .body_quote {
   color: #001a33;
-  font-weight: 500;
-  font-size: 1.2vw;
+  font-size: 1.05vw;
+  line-height: 1.5vw;
 }
 
 .body_uppercase-character {
@@ -130,11 +137,13 @@ p {
 }
 
 .body_content-title {
-  margin: 50px 0;
+  margin: 32px 0;
   text-align: center;
   font-size: 2.2vw;
   font-family: roboto;
-  color: #560B1F;
+  color: #560b1f;
+  font-weight: bold;
+  padding: 0;
 }
 
 @media screen and (max-width: 414px) {
@@ -156,7 +165,7 @@ p {
 
 .body_text-and-image-left-content-container {
   flex: 1;
-  margin-left: 32px;
+  margin-left: 16px;
 }
 
 @media screen and (max-width: 768px) {
@@ -172,7 +181,7 @@ p {
 
 .body_text-and-image-right-content-container {
   flex: 1;
-  margin-right: 32px;
+  margin-right: 16px;
 }
 
 @media screen and (max-width: 768px) {
@@ -183,7 +192,7 @@ p {
 
 .body_text-and-image-left-container > img {
   /* margin-left: calc(-50vw / 6); */
-  width: calc(50vw / 3);
+  width: calc(40vw / 2);
 }
 
 .body_text-and-image-right-container > img {
@@ -191,10 +200,18 @@ p {
   width: calc(40vw / 2);
 }
 
-.body_text-and-image-content {
+.body_text-and-image-content-left {
   color: #001a33;
-  font-size: 1.2vw;
-  font-weight: 500;
+  font-size: 1.05vw;
+  line-height: 1.5vw;
+  padding-right: 32px;
+}
+
+.body_text-and-image-content-right {
+  color: #001a33;
+  font-size: 1.05vw;
+  line-height: 1.5vw;
+  padding-left: 32px;
 }
 
 .body_image-full {
@@ -204,14 +221,15 @@ p {
 .body_footer-container {
   display: flex;
   background: #3f0000;
-  padding: 32px;
-  margin-top: 50px;
+  padding: 24px;
+  margin-top: 16px;
   width: 40vw;
   box-sizing: border-box;
 }
 
 .body_footer-container > p {
   color: #fff;
+  padding: 0;
 }
 
 @media screen and (max-width: 414px) {

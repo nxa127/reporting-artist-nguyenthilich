@@ -4,15 +4,15 @@
 }
 
 @font-face {
-  font-family: "roboto";
-  src: local("roboto"),
-    url(./assets/font/roboto.ttf) format("truetype");
+  font-family: "playfair-display";
+  src: local("playfair-display"),
+    url(./assets/font/playfair-display.ttf) format("truetype");
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: roboto;
+  font-family: playfair-display;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0e1111;

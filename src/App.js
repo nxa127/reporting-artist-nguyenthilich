@@ -53,7 +53,7 @@ const App = () => {
           <div className="body_text-and-image-left-container">
             <img src={require("./assets/images/1.jpg").default} alt="" />
             <div className="body_text-and-image-left-content-container">
-              <div className="body_text-and-image-content">
+              <div className="body_text-and-image-content-left">
                 <span className="body_uppercase-character">T</span>rên con đường
                 quanh co về thành phố Việt Trì “đi tìm nhà bà Lịch”, chúng tôi
                 chỉ cần nhắc tên bà trùm hát Xoan thì hầu như ai cũng biết.
@@ -131,7 +131,7 @@ const App = () => {
           </p>
           <div className="body_text-and-image-right-container">
             <div className="body_text-and-image-right-content-container">
-              <div className="body_text-and-image-content">
+              <div className="body_text-and-image-content-right">
                 Trên con đường quanh co về thành phố Việt Trì “đi tìm nhà bà
                 Lịch”, chúng tôi chỉ cần nhắc tên bà trùm hát Xoan thì hầu như
                 ai cũng biết.
@@ -193,11 +193,6 @@ const App = () => {
             gì làm sai vẫn bị mắng như mới vào nghề.” Nghệ nhân Hà còn nói vui:
             “Bà ấy còn cầm cả dép lên doạ đấy! Nhưng cũng vì thế mới biết bà
             Lịch quan tâm như thế nào, có thế mình mới nên người được.”
-          </p>
-          <p style={{ textAlign: "center" }}>
-            <i>
-              “Nếu giờ không có dịch, chắc tôi đang tận phương trời nào rồi”
-            </i>
           </p>
           <img
             className="body_image-full"
